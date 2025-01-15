@@ -2,13 +2,11 @@ import { Button, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
 
 
-const HomeScreen = ({navigation}) => {
+const HomeScreen = ({ navigation }) => {
     return (
         <View>
             <Text>HomeScreen</Text>
-            <View>
-                <Text>This is my first app UI</Text>
-            </View>
+            <Text className="text-lg font-black">This is my first app UI</Text>
             <Button
                 title="Go to Jane's profile"
                 onPress={() =>
@@ -16,10 +14,12 @@ const HomeScreen = ({navigation}) => {
                 }
             />
         </View>
-    )
+    );
 };
 
 
-export default HomeScreen;  
+export default HomeScreen;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+
+});
